@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murder Mystery Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CASE SELECTION SCREEN -->
+<div id="caseMenu" class="case-menu">
+
+    <h1 class="menu-title">MURDER CASE FILES</h1>
+
+    <!-- Case list -->
+    <div id="caseList" class="case-list">
+
+        <!-- 🔥 FALLBACK STATIC CASES (always visible) -->
+        <div class="case-btn" onclick="startGame(0)">
+            <div><b>Blackwood Manor</b></div>
+            <div class="case-desc">Locked room murder in a stormy mansion</div>
+        </div>
+
+        <div class="case-btn" onclick="startGame(1)">
+            <div><b>Midnight Express</b></div>
+            <div class="case-desc">Murder inside a moving train</div>
+        </div>
+
+        <div class="case-btn" onclick="startGame(2)">
+            <div><b>Silent Ward</b></div>
+            <div class="case-desc">Death in an abandoned hospital</div>
+        </div>
+
+        <div class="case-btn" onclick="startGame(3)">
+            <div><b>The Last Supper</b></div>
+            <div class="case-desc">Poisoning at a high-class dinner</div>
+        </div>
+
+        <div class="case-btn" onclick="startGame(4)">
+            <div><b>Hostel 13</b></div>
+            <div class="case-desc">Brutal student murder case</div>
+        </div>
+
+    </div>
+
+    <p class="footer">Crafted in darkness by Hirva & Sambhavi</p>
+
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h3 class="subtitle">— AN UNSOLVED CASE —</h3>
+    <h1 class="title"> MURDER MYSTERY</h1>
+    <p class="year">BLACKWOOD MANOR • 1923</p>
+</div>
+
+<!-- MAIN GAME -->
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="panel left">
+
+        <h2>EVIDENCE & CLUES</h2>
+
+        <div class="section-title">— INVESTIGATION —</div>
+
+        <button id="clueBtn" class="clue-main">Get Clue</button>
+
+        <div id="clueBox" class="clue-box"></div>
+
+        <button id="exitBtn" class="exit-btn">Exit Case</button>
+
+    </div>
+
+    <!-- CENTER PANEL -->
+    <div class="panel center">
+
+        <div class="case-header">
+            <span>CASE FILE #1923-BW</span>
+            <span class="tag">CLASSIFIED</span>
+        </div>
+
+        <div id="story"></div>
+
+        <div class="scene">
+            <h3>— CRIME SCENE LOG —</h3>
+            <div class="scene-box" id="outputBox"></div>
+        </div>
+
+        <div class="hint">
+            Select a suspect and question, then press Ask.
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel right">
+
+        <h2>INTERROGATION</h2>
+
+        <label>Select Suspect</label>
+        <select id="suspects"></select>
+
+        <label>Select Question</label>
+        <select id="questions"></select>
+
+        <button onclick="ask()">Ask Question</button>
+        <button class="accuse" onclick="accuse()">Accuse</button>
+
+        <p class="quote">Every lie has a heartbeat. Listen carefully.</p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

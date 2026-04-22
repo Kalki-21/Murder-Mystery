@@ -1,0 +1,343 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   /* 🔥 removes scroll completely */
+    width: 100vw;
+    font-family: "Courier New";
+    background: url("assets/bg.jpeg") center/cover no-repeat;
+    color: #f5d0d0;
+    overflow-y: auto;
+    height: 100vh;
+    background: black;  /* fallback */
+}
+
+
+/* ================= GLOBAL ================= */
+
+h1, h2, h3, p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid red;
+}
+
+.title {
+    font-size: 60px;
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.subtitle {
+    color: #ffaaaa;
+    letter-spacing: 3px;
+}
+
+.year {
+    color: #aaa;
+}
+
+/* ================= GRID ================= */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 25px;
+    padding: 25px;
+    height: calc(100vh - 120px);
+    width: 100vw;  
+    overflow: hidden;
+}
+
+/* ================= PANELS ================= */
+
+.panel {
+    background: rgba(20, 0, 0, 0.35);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,0,0,0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255,0,0,0.25);
+    padding: 20px;
+     flex: 0 0 auto;   /* 🔥 prevents shrinking/growing */
+     overflow: hidden;
+     box-sizing: border-box;  
+ 
+margin: 0;
+}
+
+/* IMPORTANT for exit button positioning */
+.panel.left {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    height: 100%; 
+    width: 22%;
+}
+
+.panel.center {
+    width: 50%;
+}
+
+.panel.right {
+    width: 20%;
+}
+/* ================= LEFT PANEL ================= */
+
+.section-title {
+    margin: 20px 0 10px 0;
+    color: #ffaa00;
+}
+
+.clue,
+.fake {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    background: transparent;
+}
+
+.clue {
+    border: 1px solid gold;
+    color: gold;
+}
+
+.fake {
+    border: 1px solid red;
+    color: red;
+}
+
+/* EXIT BUTTON FIX */
+.exit-btn {
+    padding: 10px;
+    background: black;
+    border: 1px solid red;
+    color: red;
+
+    cursor: pointer;
+    z-index: 10;  /* 🔥 ensures it's above everything */
+}
+
+.exit-btn:hover {
+    background: red;
+    color: black;
+}
+
+/* ================= CENTER PANEL ================= */
+
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.tag {
+    color: red;
+}
+
+#story {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ================= SCENE ================= */
+
+.scene h3 {
+    margin: 15px 0 10px 0;
+}
+
+.scene-box {
+    min-height: 200px;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid red;
+    background: black;
+    padding: 15px;
+}
+
+
+/* ================= RIGHT PANEL ================= */
+
+select, button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: 1px solid red;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+.accuse {
+    background: darkred;
+}
+
+/* ================= TEXT ================= */
+
+.hint {
+    text-align: center;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.quote {
+    margin-top: 25px;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* ================= CLUE EFFECT ================= */
+
+.clue-main {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.clue-main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, red, transparent);
+    top: 0;
+    left: -100%;
+}
+
+.clue-main:hover::after {
+    left: 100%;
+    transition: 0.5s;
+}
+
+/* ================= CLUE BOX ================= */
+
+.clue-box {
+    margin-top: 15px;
+    padding: 12px;
+
+    height: 180px;          /* 🔥 fixed reasonable size */
+    overflow-y: auto;
+
+    border: 1px solid gold;
+    color: #facc15;
+    background: rgba(0,0,0,0.4);
+    font-size: 13px;
+
+    margin-bottom: 60px;    /* space for exit button */
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes glitch {
+    0% { transform: translate(2px, -2px); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, 2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ================= CASE MENU (CLEANED) ================= */
+
+.case-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("assets/fbg1.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* DARK OVERLAY */
+.case-menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    z-index: -1;
+     pointer-events: none;   /* 🔥 THIS FIXES CLICK */
+}
+
+.menu-title {
+    color: red;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px red;
+}
+
+/* VERTICAL LIST */
+.case-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* CASE BUTTON */
+.case-btn {
+    width: 400px;
+    padding: 15px;
+    background: rgba(0,0,0,0.8);
+    border: 1px solid red;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.case-btn:hover {
+    background: red;
+}
+
+/* DESCRIPTION */
+.case-desc {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    color: #888;
+    font-style: italic;
+}
+
+/*shake when warning*/
+@keyframes shake {
+    0% { transform: translate(2px, 2px); }
+    25% { transform: translate(-2px, -3px); }
+    50% { transform: translate(3px, 2px); }
+    75% { transform: translate(-3px, -2px); }
+    100% { transform: translate(0, 0); }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+
+
+
+
