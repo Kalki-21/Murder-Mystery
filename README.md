@@ -12,7 +12,7 @@ Features \
 -> Background music and typing sound effects\
 -> Win/Lose game endings\
 -> Exit and reset system\
--> Fully deployed as a web application\
+-> Fully deployed as a web application 
 
 
 GitHub
@@ -30,28 +30,33 @@ project/
 ├── requirements.txt     # Dependencies \
 ├── runtime.txt          # python version\
 └── web/                 # frontend\
-    ├── index.html       # Main UI\
-    ├── style.css        # Styling\
-    ├── script.js        # Game logic (frontend)\
-    ├── assets/          # Images\
-    └── sounds/          # Audio files\
+        ├── index.html       # Main UI\
+        ├── style.css        # Styling\
+        ├── script.js        # Game logic (frontend)\
+        ├── assets/          # Images\
+        └── sounds/          # Audio files\
 
 
 
-🛠️ Tech Stack
-Backend: Python (Flask)
-Frontend: HTML, CSS, JavaScript
-Deployment: Render
+Tech Stack
+
+Backend: Python (Flask)\
+Frontend: HTML, CSS, JavaScript\
+Deployment: Render\
 Version Control: Git & GitHub
 
-🎯 Gameplay
-Select a case
-Read the story
-Interrogate suspects
-Gather clues
-Make your accusation
-Choose wisely… or face the consequences ☠️
 
-👨‍💻 Made by
-Hirva 
+Gameplay 
+
+Select a case\
+Read the story\
+Interrogate suspects\
+Gather clues\
+Make your accusation\
+Choose wisely… or face the consequences 
+
+
+Made by
+
+Hirva \
 Sambhavi
