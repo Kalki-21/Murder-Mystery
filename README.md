@@ -17,10 +17,10 @@ Features \
 
 GitHub
 
-📁 Project Structure
+Project Structure
 
 project/
-'''
+'''text
 ├── api.py               # functions call to other python files \
 ├── app.py               # server + API\
 ├── cases.py             # data\
