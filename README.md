@@ -20,7 +20,7 @@ GitHub
 📁 Project Structure
 
 project/
-
+'''
 ├── api.py               # functions call to other python files \
 ├── app.py               # server + API\
 ├── cases.py             # data\
@@ -35,7 +35,7 @@ project/
         ├── script.js        # Game logic (frontend)\
         ├── assets/          # Images\
         └── sounds/          # Audio files\
-
+'''
 
 
 Tech Stack
