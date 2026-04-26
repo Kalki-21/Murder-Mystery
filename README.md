@@ -6,13 +6,13 @@ This project is a browser-based interactive murder mystery investigation game bu
 Features \
 -> Multiple mystery cases to solve\
 -> Suspect interrogation system \
--> Dynamic question selection
--> Clue-based deduction gameplay
--> Horror effects (screen shake, blood splash, eerie messages)
--> Background music and typing sound effects
--> Win/Lose game endings
--> Exit and reset system
--> Fully deployed as a web application
+-> Dynamic question selection \
+-> Clue-based deduction gameplay\
+-> Horror effects (screen shake, blood splash, eerie messages)\
+-> Background music and typing sound effects\
+-> Win/Lose game endings\
+-> Exit and reset system\
+-> Fully deployed as a web application\
 
 
 GitHub
@@ -21,23 +21,20 @@ GitHub
 
 project/
 
-├── api.py               # functions call to other python files 
-
-├── app.py               # server + API
-
-├── cases.py             # data
-
-├── game_engine.py       # Game logic
-├── main.py              # desktop version
-├── models.py            # structure
-├── requirements.txt     # Dependencies 
-├── runtime.txt          # python version
-└── web/                 # frontend
-    ├── index.html       # Main UI
-    ├── style.css        # Styling
-    ├── script.js        # Game logic (frontend)
-    ├── assets/          # Images
-    └── sounds/          # Audio files
+├── api.py               # functions call to other python files \
+├── app.py               # server + API\
+├── cases.py             # data\
+├── game_engine.py       # Game logic\
+├── main.py              # desktop version\
+├── models.py            # structure\
+├── requirements.txt     # Dependencies \
+├── runtime.txt          # python version\
+└── web/                 # frontend\
+    ├── index.html       # Main UI\
+    ├── style.css        # Styling\
+    ├── script.js        # Game logic (frontend)\
+    ├── assets/          # Images\
+    └── sounds/          # Audio files\
 
 
 
