@@ -19,7 +19,7 @@ GitHub
 
 Project Structure
 
-project/
+project\
 ```text
 ├── api.py           # functions call to other python files
 ├── app.py           # server + API
