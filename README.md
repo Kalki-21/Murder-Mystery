@@ -3,16 +3,16 @@ Visit if you dare.
 This project is a browser-based interactive murder mystery investigation game built using Python (Flask) and JavaScript, where players solve cases by interrogating suspects, collecting clues, and making the final accusation.
 
 
-🎮 Features
-🧩 Multiple mystery cases to solve
-👤 Suspect interrogation system
-❓ Dynamic question selection
-🧠 Clue-based deduction gameplay
-🩸 Horror effects (screen shake, blood splash, eerie messages)
-🎧 Background music and typing sound effects
-🏆 Win/Lose game endings
-🚪 Exit and reset system
-🌐 Fully deployed as a web application
+-> Features
+-> Multiple mystery cases to solve
+-> Suspect interrogation system
+-> Dynamic question selection
+-> Clue-based deduction gameplay
+-> Horror effects (screen shake, blood splash, eerie messages)
+-> Background music and typing sound effects
+-> Win/Lose game endings
+-> Exit and reset system
+-> Fully deployed as a web application
 
 
 GitHub
