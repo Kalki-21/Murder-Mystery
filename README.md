@@ -2,6 +2,7 @@
 Visit if you dare.
 This project is a browser-based interactive murder mystery investigation game built using Python (Flask) and JavaScript, where players solve cases by interrogating suspects, collecting clues, and making the final accusation.
 
+
 🎮 Features
 🧩 Multiple mystery cases to solve
 👤 Suspect interrogation system
@@ -17,13 +18,15 @@ This project is a browser-based interactive murder mystery investigation game bu
 GitHub
 
 📁 Project Structure
+
 project/
-│
+
 ├── api.py               # functions call to other python files 
 
 ├── app.py               # server + API
 
 ├── cases.py             # data
+
 ├── game_engine.py       # Game logic
 ├── main.py              # desktop version
 ├── models.py            # structure
