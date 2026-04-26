@@ -20,22 +20,23 @@ GitHub
 Project Structure
 
 project/
-'''text
-├── api.py               # functions call to other python files \
-├── app.py               # server + API\
-├── cases.py             # data\
-├── game_engine.py       # Game logic\
-├── main.py              # desktop version\
-├── models.py            # structure\
-├── requirements.txt     # Dependencies \
-├── runtime.txt          # python version\
-└── web/                 # frontend\
-        ├── index.html       # Main UI\
-        ├── style.css        # Styling\
-        ├── script.js        # Game logic (frontend)\
-        ├── assets/          # Images\
-        └── sounds/          # Audio files\
-'''
+```text
+├── api.py           # functions call to other python files
+├── app.py           # server + API
+├── cases.py         # data
+├── game_engine.py   # Game logic
+├── main.py          # desktop version
+├── models.py        # structure
+├── requirements.txt # Dependencies
+├── runtime.txt      # python version
+└── web/             # frontend
+    ├── index.html   # Main UI
+    ├── style.css    # Styling
+    ├── script.js    # Game logic (frontend)
+    ├── assets/      # Images
+    └── sounds/      # Audio files
+```
+
 
 
 Tech Stack
