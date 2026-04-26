@@ -19,7 +19,7 @@ GitHub
 📁 Project Structure
 project/
 │
-├── api.py               # functions call to other python files
+├── api.py               # functions call to other python files \n
 ├── app.py               # server + API
 ├── cases.py             # data
 ├── game_engine.py       # Game logic
